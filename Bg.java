@@ -21,7 +21,7 @@ public class Bg {
 	Image peo=Toolkit.getDefaultToolkit().getImage("imgs/peo.png");
 	Image potion=Toolkit.getDefaultToolkit().getImage("imgs/water.png");
 	
-	void paintself(Graphics g)//����
+	void paintself(Graphics g)
 	{
 		g.drawImage(bg, 0, 200,null);
 		g.drawImage(bg1, 0, 0,null);
@@ -33,14 +33,11 @@ public class Bg {
 				draw_word(g,80,Color.green,"Ready to start",130,400);
 				break;
 			case 1:
-				//ҩˮ
 				g.drawImage(potion,450, 40, null);
 				draw_word(g,30,Color.black,"*"+potion_num,510,70);
 				
-				//����
 				draw_word(g,30,Color.black,"Score:"+score_sum,30,150);
-				
-				//�ؿ�&Ŀ�����
+			
 				draw_word(g,20,Color.black,"Level:"+level,30,60);
 				draw_word(g,30,Color.black,"Goal:"+aim_score,30,110);
 				
@@ -92,6 +89,6 @@ public class Bg {
 		score_sum=0;
 		potion_num=3;
 		potion_use=false;
-		level=1;//�ؿ���
+		level=1;
 	}
 }
